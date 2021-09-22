@@ -5,7 +5,7 @@ module.exports = {
     // enabled: true,
     content: ["public/**/*.html", "src/**/*.js", "src/**/*.jsx"],
   },
-  presets: [],
+  // presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {

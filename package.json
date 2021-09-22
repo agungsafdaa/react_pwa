@@ -26,7 +26,7 @@
   "scripts": {
     "build:tailwind": "tailwind build src/tailwind.css -o src/tailwind.output.css",
     "watch:tailwind": "chokidar 'src/**/*.css' 'src/**/*.scss' --ignore src/tailwind.output.css -c 'npm run build:tailwind'",
-    "start": "npm-run-all build:tailwind --paraller watch:tailwind start:react",
+    "start": "npm-run-all build:tailwind --parallel watch:tailwind start:react",
     "start:react": "react-scripts start",
     "prebuild": "run-s build:tailwind",
     "build": "react-scripts build",
@@ -52,10 +52,10 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^8.6.5",
+    "autoprefixer": "^10.3.5",
     "chokidar-cli": "^3.0.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.9"
+    "postcss": "^8.3.7",
+    "tailwindcss": "^2.2.15"
   }
 }
