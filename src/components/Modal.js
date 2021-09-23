@@ -1,4 +1,4 @@
-function Modal({HandleShowModal}) {
+function Modal({HandleShowModal }) {
     return (
         <div className="fixed inset-0 z-40 flex items-center justify-center w-100 min-h-screen" onClick={HandleShowModal}>
             <div className="fixed inset-0 bg-black opacity-35"></div>
