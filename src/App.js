@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route} from 'react-router-dom'
 import Arrived from './components/Arrived';
 import Asidemenu from './components/Asidemenu';
 import Browse from './components/Browse';
@@ -6,7 +7,8 @@ import Client from './components/Client';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
- 
+import Profile from './pages/Profile'
+import Detail from './pages/Detail'
 function App() {
   const [items, setItems] = React.useState([]);
 
@@ -38,4 +40,12 @@ function App() {
   );
 }
 
-export default App;
+export default function Routes(){
+  return(
+    <Router>
+      <Route path="/" exact component={App}/>
+      <Route path="/profile" component={Profile}/>
+      <Route path="/details/:id" component={Detail}/>
+    </Router>
+  )
+};

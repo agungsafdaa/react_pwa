@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 function ArrivedItem({ item }){
     return (
         <div className="px-4 relative card group">
@@ -36,9 +37,9 @@ function ArrivedItem({ item }){
         </div>
         <h5 className="text-lg font-semibold mt-4">{item.name}</h5>
         <span className="">{item.price}</span>
-        <a href="details.html" className="stretched-link">
+        <Link to={`/details/${item.id}`} className="stretched-link">
 
-        </a>
+        </Link>
       </div>
 
     )
